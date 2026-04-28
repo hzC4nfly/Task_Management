@@ -1,0 +1,417 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background: #686279;
+    text-align: center;
+    background: #2C2638;
+    z-index: 2;
+}
+
+nav .brand {
+    position: relative;
+    left: 30px;
+    top: -7px;
+    padding: 0 25px;
+    cursor: pointer;
+}
+
+nav .brand h1 {
+    font-family: cursive;
+    color: #fff;
+    font-size: 40px;
+}
+
+nav .brand h1 span,
+.brand h1 span {
+    color: #6333f1;
+    -webkit-text-stroke: 1px black;
+}
+
+nav .brand label {
+    position: absolute;
+    top: 40px;
+    font-size: 13px;
+    left: 30px;
+    color: #fff;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    display: inline-block;
+    cursor: pointer;
+}
+
+nav .brand label span:nth-child(1) {
+    color: #6333f1;
+}
+
+nav .brand label span:nth-child(2) {
+    color: rgb(161, 140, 17);
+}
+
+nav div ul {
+    display: flex;
+    list-style: none;
+    margin-right: 0;
+    align-items: center;
+}
+
+nav div ul li button i {
+    color: #fff;
+    font-size: 17px;
+}
+
+nav div ul li button {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    background: none;
+    border: none;
+}
+
+nav div ul li button:hover {
+    /* background: #14111a; */
+    border-radius: 5px;
+}
+
+
+
+nav div ul li .B1::after {
+    content: "Notifications";
+    position: absolute;
+    bottom: -40px;
+
+    transform: translateX(-50%) translateY(10px);
+    background: white;
+    color: black;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+nav div ul li .B2::after {
+    content: "Invite members";
+    position: absolute;
+    bottom: -40px;
+    transform: translateX(-50%) translateY(10px);
+    background: white;
+    color: black;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+nav div ul li .B3::after {
+    content: "Hz marketplace";
+    position: absolute;
+    bottom: -40px;
+    transform: translateX(-50%) translateY(10px);
+    background: white;
+    color: black;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+nav div ul li .B4::after {
+    content: "Search everything";
+    position: absolute;
+    bottom: -40px;
+    transform: translateX(-50%) translateY(10px);
+    background: white;
+    color: black;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+nav div ul li .B5::after {
+    content: "help";
+    position: absolute;
+    bottom: -40px;
+    transform: translateX(-50%) translateY(10px);
+    background: white;
+    color: black;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+nav div ul li button:hover::after {
+    opacity: 1;
+    bottom: -29px;
+    z-index: 2;
+}
+
+nav .break_line {
+    width: 1px;
+    height: 27px;
+    background: #4b4e69;
+    margin: 0 15px;
+}
+
+nav .profile {
+    padding: 0 10px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    gap: 15px;
+}
+
+nav .profile p {
+    white-space: nowrap;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+nav .profile .imgDiv {
+    width: 55px;
+    height: 55px;
+    background: #6333f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .profile .imgDiv img {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+
+@media (max-width: 768px) {
+    .profile {
+        order: -1;
+        margin-bottom: 15px;
+    }
+
+    nav .break_line {
+        order: 0;
+        width: 100%;
+        height: 1px;
+        background: #000;
+        margin: 0;
+    }
+
+    nav ul li {
+        order: 1;
+        /* background: #000; */
+        width: 100%;
+        text-align: start;
+    }
+
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        /* background: #fff; */
+        flex-direction: column;
+    }
+
+
+    .nav-links.active {
+        display: flex;
+        z-index: 1000;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        margin-left: auto;
+        background: #645a81;
+        padding: 15px 25px;
+        position: relative;
+        right: 0;
+        border-radius: 2px;
+        height: calc(100vh - 60px);
+        gap: 25px;
+    }
+
+    nav .profile {
+        display: flex;
+        border: 1px solid #6333f1;
+        border-radius: 10px;
+    }
+
+    nav .profile p {
+        order: 2;
+        color: #fff;
+    }
+
+    nav .profile .imgDiv {
+        order: 1;
+        width: 49px;
+        height: 49px;
+        background: none;
+    }
+
+    nav .profile .imgDiv img {
+        width: 42px;
+        height: 42px;
+        border: 3px solid #6333f1;
+    }
+
+    li {
+        position: relative;
+        border-radius: 5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    li button i {
+        margin-left: 10px;
+        text-align: center;
+        align-content: center;
+        color: #fff;
+    }
+
+    nav div ul li button {
+        width: 100%;
+        height: 45px;
+        align-items: center;
+        text-align: start;
+        transition: 0.6s;
+    }
+
+    nav div ul li button:hover {
+        background: #2b2246;
+    }
+
+    nav div ul li button:hover::after {
+        bottom: initial;
+        /* color: #2b2246; */
+    }
+
+    nav div ul li .B1::after {
+        position: absolute;
+        font-size: 15px;
+        font-weight: 550;
+        bottom: initial;
+        transform: none;
+        background: none;
+        opacity: 1;
+        box-shadow: none;
+        margin-top: -5px;
+        color: #Fff;
+        z-index: 2;
+    }
+
+    nav div ul li .B2::after {
+        position: absolute;
+        font-size: 15px;
+        font-weight: 550;
+        bottom: initial;
+        transform: none;
+        background: none;
+        opacity: 1;
+        box-shadow: none;
+        margin-top: -5px;
+        color: #Fff;
+    }
+
+    nav div ul li .B3::after {
+        position: absolute;
+        font-size: 15px;
+        font-weight: 550;
+        bottom: initial;
+        transform: none;
+        background: none;
+        opacity: 1;
+        box-shadow: none;
+        margin-top: -5px;
+        color: #Fff;
+    }
+
+    nav div ul li .B4::after {
+        position: absolute;
+        font-size: 15px;
+        font-weight: 550;
+        bottom: initial;
+        transform: none;
+        background: none;
+        opacity: 1;
+        box-shadow: none;
+        margin-top: -5px;
+        color: #Fff;
+    }
+
+    nav div ul li .B5::after {
+        position: absolute;
+        font-size: 15px;
+        font-weight: 550;
+        bottom: initial;
+        transform: none;
+        background: none;
+        opacity: 1;
+        box-shadow: none;
+        margin-top: -5px;
+        color: #Fff;
+    }
+
+    /* i finshed the headnav sestion */
+    
+
+}

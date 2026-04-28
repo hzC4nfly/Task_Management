@@ -1,0 +1,269 @@
+.leftNav {
+    position: relative;
+    overflow-y: auto;
+    width: 15%;
+    height: 100%;
+    text-align: center;
+    color: #9699a6;
+    background: #251f35;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    
+}
+
+.content .leftNav .ulDivs {
+    margin-top: 15px;
+}
+
+.tasks i {
+    font-size: 20px;
+}
+
+.content .leftNav .ulDivs div,
+.tasks,
+.Daskboard {
+    margin-top: 15px;
+    width: 70%;
+    margin: auto;
+    position: relative;
+    left: -12px;
+}
+/* white-space: nowrap; */
+.content .leftNav .ulDivs div a,
+.tasks a,
+.Daskboard a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: #9699a6;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    margin: 10px auto;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.content .leftNav .ulDivs div a:hover,
+.tasks a:hover,
+.Daskboard a:hover {
+    background: rgba(103, 104, 121, 0.3);
+    color: #fff;
+}
+.Daskboard a p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.content .leftNav .ulDivs div a p {
+    font-size: 14px;
+}
+
+.workSpace {
+    z-index: 1;
+}
+
+.workSpace .workSpaceNavTitle {
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+    margin-top: 30px;
+    justify-content: end;
+    align-items: center;
+    padding: 8px;
+    gap: 15px;
+
+}
+
+.workSpace .workSpaceNavTitle button {
+    border: none;
+    background: none;
+    color: #f7f7f7;
+    cursor: pointer;
+}
+
+.workSpace .workSpaceNavTitle p {
+    margin-right: 38%;
+}
+
+.workSpace .worksSpaceInput {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    gap: 8px;
+    align-items: center;
+}
+
+.workSpace .worksSpaceInput .worksSpaces {
+    width: 80%;
+}
+
+.workSpace .worksSpaceInput .worksSpaces select {
+    width: 100%;
+    padding: 5px 8px;
+    background: #30324e;
+    border: 1px solid #fff;
+    font-size: 19px;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.workSpace .worksSpaceInput .worksSpaces select option {
+    font-size: 14px;
+}
+
+.workSpace .worksSpaceInput .worksSpaces select optgroup {
+    font-size: 11px;
+    padding: 4px;
+    margin-left: -5px;
+    color: #c3c6d4;
+}
+
+.workSpace .worksSpaceInput button::after {
+    opacity: 0;
+    background: #fff;
+    color: #000;
+    border-radius: 8px;
+    z-index: 100001;
+    margin: -70px -90px;
+    position: absolute;
+    content: 'create new workspace';
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 6px 10px;
+    transition: all 0.5s ease;
+}
+
+.workSpace .worksSpaceInput button:hover::after {
+    opacity: 1;
+    margin-top: -43px;
+}
+
+.workSpace .worksSpaceInput button,
+.quickSearch {
+    background: #0078f8;
+    border: none;
+    padding: 2px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.workSpace .worksSpaceInput button i {
+    font-size: 24px;
+    color: #fff;
+}
+.left-toggle{
+    display: none;
+}
+@media (max-width: 768px) {
+    .leftNav{
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+    }
+    .leftNav div p{
+        display: none;
+    }
+    .content{
+        display: flex;
+    }
+    /* .content .leftNav .ulDivs div, .tasks, .Daskboard {
+        left: initial;
+    } */
+    .content .leftNav div i{
+        font-size: 19px;
+    }
+    .workSpace .workSpaceNavTitle {
+        display: none;
+    }
+     .left-toggle {
+        display: flex;
+        order: 1;
+        max-width: 50px;
+        max-height: 30px;
+        background: none;
+        border: none;
+        align-items: center;
+        z-index: 5;
+        position: relative;
+        top: 6px;
+        left: 35px;
+        white-space: nowrap;
+        /* transform: translateY(-61vh); */
+        align-self: flex-end;
+    }
+
+    .left-toggle i {
+        color: rgb(255, 255, 255);
+        font-size: 35px;
+        background: purple;
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+    .leftt{
+        width: 30%;
+        z-index: 8;
+        box-shadow: 10px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+    .content .leftNav .ulDivs div a, .tasks a, .Daskboard a {
+        justify-content: center;
+    }
+    .content .leftNav .ulDivs {
+        order: 2;
+    }
+    .betweenDivs {
+        order: 3;
+    }
+    
+    .workSpace {
+        order: 4;
+    }
+    .testTest{
+        animation-name: leftNavOpen;
+        animation-duration: 0.7s;
+        /* animation-delay: 10ms; */
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        
+    }
+    
+    @keyframes leftNavOpen{
+        0%{
+            z-index: 1;
+        }
+        20%{
+            z-index: 2;
+            width: 20%;
+        }
+        40%{
+            z-index: 3;
+            width: 25%;
+        }
+        60%{
+            z-index: 4;
+            width: 30%;
+             .leftNav.testTest div p{
+        color: red;
+        display: flex;
+    }
+        }
+        80%{
+            z-index: 5;
+            width: 35%;
+        }
+        100%{
+            z-index: 6;
+            width: 40%;
+        }
+    }
+    .leftNav.testTest div p{
+        display: flex;
+        z-index: 1;
+    }
+    .content .leftNav.testTest .ulDivs div a,.leftNav.testTest .tasks a, .leftNav.testTest .Daskboard a {
+        justify-content: initial;
+    }
+}

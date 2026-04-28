@@ -1,0 +1,537 @@
+.content {
+    position: absolute;
+    width: 98%;
+    height: 90.5%;
+    max-height: 100%;
+    background: #1d1829;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    right: 0;
+}
+
+.mainContent {
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* 1 (header,  workspace title)*/
+.mainContent .barHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+
+    align-items: center;
+}
+
+.mainContent .barHeader h2 {
+    font-weight: 400;
+    /* background: #000; */
+    padding: 10px;
+}
+
+.mainContent .barHeader div i.bi-three-dots {
+    font-size: 19px;
+    cursor: pointer;
+    padding: 9px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.mainContent .barHeader div i.bi-three-dots:hover {
+    background: #5c5c5e;
+
+}
+
+.three-dots-dev {
+    color: #fff;
+    position: absolute;
+    right: 0;
+    margin: 45px 50px;
+    background: #2C2638;
+    width: 270px;
+    border-radius: 15px;
+}
+
+.three-dots-dev ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.three-dots-dev ul li {
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    padding: 11px;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s;
+}
+
+.three-dots-dev ul li:hover {
+    background: #14111a;
+}
+
+/* 2 (breakline) */
+.mainContent .barTable p {
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-color: #0b78ec;
+    text-decoration-thickness: 2px;
+    font-weight: 100;
+    font-family: monospace;
+}
+
+.mainContent .barTable .breakLine,
+.theLine {
+    height: 1px;
+    background: #4B4E69;
+}
+
+.theLine {
+    margin: 3px;
+}
+
+/* 3  (buttons)*/
+.mainContent .soBar {
+    margin-top: 20px;
+    display: flex;
+    gap: 25px;
+}
+
+.mainContent .soBar button {
+    padding: 9px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.mainContent .soBar button.createBtn i {
+    font-size: 16px;
+}
+
+.mainContent .soBar button.createBtn {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 8px;
+    background: #0b78ec;
+    padding: 9px 16px;
+    border-radius: 8px;
+}
+
+/* 4  (table title)*/
+.mainContent .tasksTable .titleTable {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    gap: 8px;
+    text-align: center;
+    color: #2576cc;
+    margin-top: 25px;
+}
+
+.mainContent .tasksTable .titleTable i {
+    font-size: 20px;
+}
+
+.mainContent .tasksTable .titleTable h2 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* 5  (table)*/
+.mainContent .table {
+    margin-top: 20px;
+
+}
+
+tbody tr td input {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+tr.row-newTaskInput .emptyTd {
+    background: #1d1829;
+    border: none;
+}
+
+.newTaskInput {
+
+    width: 100%;
+    text-align: start;
+}
+
+.newTaskInput input {
+    cursor: pointer;
+    /* padding: 7px; */
+    margin-left: 12px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    text-align: start;
+}
+
+
+td,
+th {
+    padding: 10px;
+    border: 1px solid #4B4E69;
+}
+
+.mainContent .table table {
+    background: #30324E;
+    border-collapse: collapse;
+    width: 75%;
+    text-align: center;
+}
+
+table td#forStatus {
+    cursor: pointer;
+    padding: 0;
+}
+
+td select {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 2px;
+    width: 100%;
+    height: 37px;
+    border: none;
+    background: none;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    display: flex;
+    gap: 8px;
+
+}
+
+td select option:nth-child(1) {
+    background: green;
+    cursor: pointer;
+}
+
+td select option:nth-child(2) {
+    background: orange;
+    cursor: pointer;
+}
+
+td select option:nth-child(3) {
+    background: red;
+    cursor: pointer;
+}
+
+th#fr-th {
+    border: none;
+    border-top: none;
+    background: #1d1829;
+}
+
+td.checkBoxDel {
+    padding: 14px;
+}
+
+#buttonvalid {
+    display: none;
+}
+
+#buttonvalid,
+.buttonvalid {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(0, -280%);
+}
+
+#buttonvalid div,
+.buttonvalid div {
+    background-color: #23202e;
+    ;
+    border: 1px solid #1a61ac;
+    width: 130px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 37px;
+    border-radius: 20px;
+}
+
+#buttonvalid button,
+.buttonvalid button {
+    cursor: pointer;
+    background: none;
+    font-size: 25px;
+    border: none;
+
+}
+
+#buttonvalid button i.bi-check-circle {
+    color: green;
+}
+
+#buttonvalid button i.bi-x-circle-fill {
+    color: rgb(185, 35, 35);
+}
+
+.buttonvalid button i.bi-trash {
+    color: rgb(182, 40, 40);
+}
+
+.buttonvalid button i.bi-x-circle-fill {
+    color: rgb(107, 106, 106);
+}
+
+.barHeader .worksSpaces select {
+    padding: 5px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 21px;
+    background: #30324e;
+    border: 1px solid #30324e;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.barHeader .worksSpaces select option {
+    font-size: 14px;
+}
+
+.barHeader .worksSpaces select optgroup {
+    font-size: 11px;
+    padding: 4px;
+    margin-left: -5px;
+    color: #c3c6d4;
+}
+
+.barHeader .worksSpaces button::after {
+    opacity: 0;
+    background: #fff;
+    color: #000;
+    border-radius: 8px;
+    z-index: 100001;
+    margin: -70px -90px;
+    position: absolute;
+    content: 'create new workspace';
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 6px 10px;
+    transition: all 0.5s ease;
+}
+
+.barHeader .worksSpaces button:hover::after {
+    opacity: 1;
+    margin-top: -43px;
+}
+
+.barHeader .worksSpaces button {
+    background: #0078f8;
+    border: none;
+    padding: 2px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    padding: 4px 7px;
+    margin-left: 10px;
+    transition: 0.4s;
+}
+
+.barHeader .worksSpaces button:hover {
+    background: #1767c28c;
+}
+
+.barHeader .worksSpaces button i {
+    font-size: 24px;
+    color: #fff;
+}
+
+.barHeader .worksSpaces button i:hover {
+    background: none;
+}
+
+
+/* add worksapce from */
+
+#addworkspaceForm {
+    border-radius: 10px;
+    position: fixed;
+    width: 25%;
+    height: 42%;
+    background: #1d1829;
+    ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border: 1px solid #0b78ec;
+}
+
+#addworkspaceForm h2 {
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+    padding: 7px;
+}
+
+#addworkspaceForm div.permissionText {
+    margin-top: 25px;
+}
+
+#addworkspaceForm div.permissionText p {
+    text-align: center;
+    font-size: 13px;
+    color: #9699a6;
+}
+
+#addworkspaceForm div.permissionText p strong {
+    color: rgb(143, 40, 40);
+}
+
+#addworkspaceForm .inputsDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+#addworkspaceForm .inputsDiv input {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 7px;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #0b78ec;
+    font-size: 18px;
+    color: #fff;
+}
+
+#addworkspaceForm .inputsDiv p {
+    margin-top: 1px;
+    margin-left: 10%;
+    color: #f02849;
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+}
+
+#addworkspaceForm .inputsDiv button {
+    width: 17%;
+    margin: 40px auto;
+    background: #0b78ec;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #0b78ec;
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+#addworkspaceForm .inputsDiv button:focus {
+    background: transparent;
+}
+
+.blur-background {
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    filter: blur(3px);
+    transition: filter 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    /* table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        
+    } */
+     table, thead, tbody, th, td, tr {
+    display: block; /* Changes all table elements to block level */
+  }
+
+  thead tr {
+    position: absolute; /* Hides the original table header visually */
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+    margin-bottom: 15px; /* Adds spacing between the "cards" */
+  }
+
+  td {
+    border: none;
+    position: relative;
+  }
+  tbody tr td input {
+    text-align: center;
+  }
+ .mainContent .table {
+    display: flex;
+    justify-content: center;
+ }
+ .barHeader .worksSpaces select {
+    font-size: 13px;
+ }
+ .barHeader .worksSpaces button{
+    padding: 3px 4px;
+ }
+ .barHeader .worksSpaces button i {
+    font-size: 18px;
+ }
+ .mainContent .barHeader div i.bi-three-dots {
+    font-size: 14px;
+ }
+ .mainContent .barHeader {
+    justify-content: end;
+    gap: 5px;
+ }
+ .mainContent {
+    overflow: auto;
+ }
+ .mainContent .soBar button {
+    padding: 4px;
+    font-size: 12px;
+ }
+ #addworkspaceForm div.permissionText {
+    width: 80%;
+    margin: auto;
+ }
+ #addworkspaceForm {
+    width: 80%;
+    height: 55%;
+ }
+ #addworkspaceForm .inputsDiv button {
+    width: initial;
+ }
+ .barHeader .worksSpaces button::after {
+    display: none;
+ }
+ #buttonvalid, .buttonvalid {
+    left: 40%;
+    transform: translate(0,-130%);
+ }
+}

@@ -1,0 +1,36 @@
+
+#SocialForms {
+    width: 40%;
+    background: #2C2638;
+    height: 34%;
+    display: flex;
+    color: #000;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    border-radius: 10px;
+    border: solid #fff 1px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.loginInputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: -90px;
+    margin-bottom: 40px;
+}
+
+/* band nav in phone resulistion style */
+@media (max-width: 768px) {
+    .loginInputs {
+        margin-top: -20px;
+    }
+    /* .contentDiv #SignDiv #SignFrom .head {
+        width: 90%;
+    } */
+
+}
