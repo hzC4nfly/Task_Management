@@ -35,8 +35,8 @@ This app helps users organize, track, and manage their daily tasks efficiently.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/hzC4nfly/hotel-showcase.git
+cd hotel-showcase
 ```
 
 ---
@@ -105,7 +105,6 @@ This project is open-source and available under the MIT License.
 
 ## 👨‍💻 Author
 
-Your Name
-GitHub: https://github.com/hzC4nfly
+TAHA HZ: https://github.com/hzC4nfly
 
 ---
